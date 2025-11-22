@@ -16,7 +16,7 @@ body{
      /* border: 1px solid white; */
      height: 60vh;
      position: relative;
-     top: 20%;
+     top: 18%;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -38,6 +38,18 @@ h1{
     margin-right: 0.3em;
     cursor: pointer;
 }
+/* .fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color: skyblue;
+}
+.fa-instagram{
+    color: rgba(240, 18, 236, 0.859);
+}
+.fa-youtube{
+    color: rgb(246, 30, 30);
+} */
 .singin{
     /* border: 1px solid white; */
     width: 40vw;
@@ -55,12 +67,22 @@ h1{
     height: 10%;
     border-radius: 6px;
     margin-bottom: 1.5em ;
+    transition: 0.35s ease-in-out;
+}
+.email:hover{
+    transform: scale(1.02);
+        border: 2px solid orangered;
 }
 .password{
     width: 90%;
     height: 10%;
     border-radius: 6px;
     margin-bottom: 1.5em ;
+    transition: 0.35s ease-in-out;
+}
+.password:hover{
+    transform: scale(1.02);
+    border: 2px solid orangered;
 }
 button{
     background:orangered;
@@ -68,10 +90,23 @@ button{
     padding: 0.8em;
     margin: 1em 0;
     border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.singin a{
+button:hover{
+    box-shadow: 0 0 0 4px transparent,
+    0 0 0 2px orangered ;
+}
+.singin p a{
     text-decoration: none;
+    /* border: #fff 1px solid; */
     color: #fff;
+}
+.page{
+    margin: 1em 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.page a:hover{
+    color: rgba(252, 96, 39, 0.738);
 }
 .singin .para{
     /* border:  1px solid white; */
