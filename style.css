@@ -18,12 +18,14 @@ body{
      position: relative;
      top: 18%;
      display: flex;
-     justify-content: space-around;
+     /* justify-content: space-around; */
      align-items: center;
 }
 .content{
     /* border: 1px solid white; */
     width: 40vw;
+    position: relative;
+    left:6% ;
 }
 h1{
     font-size: 6rem;
@@ -51,9 +53,11 @@ h1{
     color: rgb(246, 30, 30);
 } */
 .singin{
-    /* border: 1px solid white; */
+    /* border: 1px solid #000; */
     width: 40vw;
     height: 70%;
+    position: relative;
+    left: 8%;
 }
 .singin h2{
     font-size: 2.8em;
@@ -113,4 +117,98 @@ button:hover{
     margin-top: 5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+@media (max-width: 931px){
+    body {
+    height: 55vh; 
+    background-size: cover;
+  }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        position: relative;
+        top: 35%;
+        width: 80%;
+        margin: 0% auto;
+    }
+    .content{
+        width: 40vw;
+        width: 90%;
+    }
+    .content h1{
+        font-size: 4rem
+    }
+    .singin{
+        color: black;
+        height: 45%;
+        position: relative;
+        top: 13%;
+        width: 90%;
+        /* right: 9%; */
+    }
+    .singin p a{
+        color: #000;
+    }
+    .para{
+        /* border: #000 1px solid; */
+        position: relative;
+        bottom: 10%;
+    }
+}
+@media (max-width: 583px){
+    body{
+        font-size: 12px;
+        height: 43vh;
+        background-size: cover;
+    }
+    .container{
+        position: relative;
+        top: 35%;
+        width: 80%;
+    }
+    .content{
+        width: 90%;
+        /* height:20%; */
+    }
+    .fa-brands{
+        position: relative;
+        left: 10%;
+    }
+    .singin{
+        width: 90%;
+        /* height:35% ; */
+    }
+   .content h1{
+        font-size: 2rem;
+    }
+    .email {
+        height: 7%;
+    }
+    .password{
+        height: 7%;
+    }
+    button{
+        padding: 0.5em;
+        font-size: 9px;
+        border: 2px;
+    }
+    .para{
+        font-size: 10px;
+    }
+    .page{
+        font-size: 9px;
+    }
+}
+@media (max-width: 375px){
+    .container{
+        width: 80%;
+    }
+    .content{
+        width: 90%;
+    }
+    .singin{
+        width: 90%;
+    }
 }
